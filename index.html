@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>BANNIERE 300x250 DHTML</title>
+    <meta charset="utf-8">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.write('<script src="' + (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv=' + Math.random()) + '"><\/script>');
+    </script>
+
+</head>
+
+<body>
+<div id="container">
+    <div id="mask"></div>
+    <div id="frame1" class="frame">
+        <a href="https://player.vimeo.com/video/899206195"><img src="images/01.png" alt="frame1"></a>
+    </div>
+
+    <div id="frame2" class="frame">
+        <div class="content-text first">
+            <div class="title">CSm RH+/HER2-</div>
+            <div class="subtitle">Après une hormonothérapie quel que soit le stade <br>et 2 traitements systémiques additionnels</div>
+        </div>
+        <div class="content-button">NOUVEAU</div>
+        <div class="content-text second">
+            <div>TRODELVY est indiqué en monothérapie pour le traitement des adultes atteints d’un cancer du sein avec récepteurs hormonaux positifs (RH+) et HER2-négatif non résécable ou métastatique ayant déjà reçu une hormonothérapie, et au moins deux traitements systémiques additionnels au stade avancé de la maladie.</div>
+        </div>
+        <br>
+
+        <div class="content-text Third">
+            <div class="title">CSTNm </div>
+            <div class="subtitle">dès la L2 métastatique</div>
+        </div>
+        <div class="content-text Fifth">
+            <p>TRODELVY est indiqué en monothérapie pour le traitement des adultes atteints de cancer du sein triple négatif (CSTN) non résécable ou métastatique ayant déjà reçu au moins deux traitements systémiques, dont au moins un pour une forme avancée de la maladie. <br>
+                Place dans la stratégie thérapeutique CSTNm : En prenant en compte l’introduction récente dans la stratégie thérapeutique de l’immunothérapie (pembrolizumab) en première ligne du cancer du sein triple négatif, la place du sacituzumab govitecan en cas de tumeur avec expression du PD-L1, reste à définir.
+            </p>
+        </div>
+        <div class="content-text Sixth">
+            <p>Non remboursable à la date du 19/10/2023. </p>
+            <p>
+                Pris en charge  selon les conditions définies à l’article L.162-16-5-2 du Code de la Sécurité Sociale au titre des autorisations d’accès précoce accordées par la HAS :
+                <br>- le 2 septembre 2021 dans l'indication CSTNm ;
+                <br>- le 23 février 2023  dans l’indication suivante :
+                <br>« TRODELVY est indiqué en  monothérapie pour le traitement des patients adultes  atteints d’un cancer du sein RH positifs / HER2-négatifs  (IHC 0, IHC 1+ ou IHC 2+/ISH-) non résécable ou  métastatique, ayant reçu au moins deux lignes de  chimiothérapie au stade métastatique ».
+            </p>
+            <p>Demande d’admission à l’étude.</p>
+            <small>1.Resumé de caractéristiques du produit TRODELVY </small><br>
+            <small>2.HAS Avis de la commission de la Transparance TRODELVY  du 6 avril 2022  </small>
+        </div>
+    </div>
+    <div id="frame3" class="frame">
+        <div class="content-text first">
+            <p id="link1">
+                <span class="triangle triangle-bottom"></span>
+                &nbsp;&nbsp;
+                Ce médicament fait l’objet d’une surveillance supplémentaire, qui permettra l’identification rapide de nouvelles informations relatives à la sécurité. Déclarez immédiatement tout effet indésirable suspecté d’être dû à un médicament auprès de votre <br>Centre Régional de Pharmacovigilance (CRPV) ou sur <br>
+                <a href="https://signalement.social-sante.gouv.fr">https://signalement.social-sante.gouv.fr</a>
+            </p>
+        </div>
+        <div class="content-text second">
+            <p id="link2">
+                Pour une information complète, consultez le RCP disponible sur la base de données publique des médicaments en cliquant <a href="https://base-donnees-publique.medicaments.gouv.fr/extrait.php?specid=67719704">ici</a>
+            </p>
+            <p id="link3">Avant de prescrire dans le CSTNm, consultez la place dans la stratégie thérapeutique sur <br> <a href="https://www.has-sante.fr/">www.has-sante.fr</a></p>
+        </div>
+
+        <br>
+        <div class="logo">
+            <img src="images/logo2.svg" alt="logo 2">
+        </div>
+        <br>
+
+
+
+        <div class="content-text third">
+            <div>Gilead Sciences - SAS au capital de 76224,50 euros - 65 quai Georges Gorse 92100 Boulogne Billancourt - France - SIREN 391 360 971 RCS Nanterre - APE 4646Z TVA Intracommunautaire FR 663 913 609 71 - Tel +33 (0) 1 46 09 41 00 - Fax +33 (0) 1 46 09 41 06 - www.gilead.fr</div>
+            <br> <p>D-23/0332 - 23/10/67719704/PM/003 - Octobre 2023</p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const boxes = document.querySelectorAll('#container > .frame');
+    let currentIndex = 0;
+    let delay = 0;
+    let animationTimeout;
+
+    function runAnimations() {
+        var animationDuration = 3000;
+        const currentBox = boxes[currentIndex];
+        boxes.forEach((box) => { box.style.animationName = ''; });
+        currentBox.style.animationName = 'animate';
+        if(currentIndex == 0){ animationDuration = 2000; }
+        currentBox.style.animationDuration = (animationDuration/1000)+'s';
+        currentBox.style.animationDelay = delay;
+        currentIndex = (currentIndex + 1) % boxes.length;
+        delay = animationDuration * currentIndex;
+
+        animationTimeout = setTimeout(runAnimations, animationDuration);
+
+    }
+
+    runAnimations();
+
+    const targetLinks = [
+        'https://player.vimeo.com/video/899206195',
+        'https://signalement.social-sante.gouv.fr',
+        'https://base-donnees-publique.medicaments.gouv.fr/extrait.php?specid=67719704',
+        'https://www.has-sante.fr/'
+    ];
+
+    document.getElementById("frame1").onclick = function () {
+        window.open(targetLinks[0], '_blank');
+    };
+    document.getElementById("frame2").onclick = function () {
+        window.open(targetLinks[1], '_blank');
+    };
+    document.getElementById("frame3").onclick = function () {
+        window.open(targetLinks[2], '_blank');
+    };
+    document.getElementById("link1").onclick = function () {
+        window.open(targetLinks[1], '_blank');
+    };
+    document.getElementById("link2").onclick = function () {
+        window.open(targetLinks[2], '_blank');
+    };
+    document.getElementById("link3").onclick = function () {
+        window.open(targetLinks[3], '_blank');
+    };
+
+</script>
+</body>
+</html>

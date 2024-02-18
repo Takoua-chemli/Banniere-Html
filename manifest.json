@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+
+    "title": "BANNIERE 300X600", 
+    "description": "",  
+
+    "width" : "300", 
+    "height": "600", 
+
+    "events": {
+        "enabled": 1, 
+        "list": { }
+    },
+
+    "clicktags": {
+        "clickTag1": "https://player.vimeo.com/video/899206195",
+        "clickTag2": "https://signalement.social-sante.gouv.fr",
+        "clickTag3": "https://base-donnees-publique.medicaments.gouv.fr/extrait.php?specid=67719704",
+        "clickTag4": "https://www.has-sante.fr/"
+    },
+
+    "source": "index.html"
+}
